@@ -1,7 +1,7 @@
 {
     "name": "ebene7/symfony-playground",
     "description": "E7 Symfony Playground",
-    "homepage": "https://github.com/ebene7/symfony-playground"
+    "homepage": "https://github.com/ebene7/symfony-playground",
     "type": "project",
     "license": "proprietary",
     "require": {
