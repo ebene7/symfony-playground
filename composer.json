@@ -6,6 +6,9 @@
     "license": "proprietary",
     "require": {
         "php": "^7.0.8",
+        "ebene7/symfony-meta-bundle": "dev-dev",
+        "ebene7/php-lib": "dev-dev",
+        "ebene7/phpunit": "dev-dev",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.1",
