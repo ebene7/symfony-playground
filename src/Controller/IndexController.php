@@ -16,14 +16,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class IndexController extends Controller
 {
     /**
-     * @Route("/sdfsdf", methods={"GET"}, name="homepage")
+     * @Route("/", methods={"GET"}, name="homepage")
      */
     public function index()
     {
         $number = random_int(0, 100);
-
-        \Doctrine\DBAL\Types\Type::addType('objectstring', ObjectString::class);
-
         $number = $this->getParameter('foo');
 
         $p = new Person();
@@ -44,9 +41,9 @@ class IndexController extends Controller
     }
 
     /**
-     * @Route("/", methods={"GET"}, name="loadbyid")
+     * @Route("/{id}", methods={"GET"}, name="loadbyid")
      */
-    public function loadAction($id = 9)
+    public function loadAction($id)
     {
         $em = $this->getDoctrine()->getManager();
         $r = $this->getDoctrine()->getRepository(Pet::class);
