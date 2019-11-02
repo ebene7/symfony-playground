@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+//use E7\MetaBundle\Shared\UserInterface;
 
 /**
  * Class Person
@@ -11,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity()
  * @ORM\Table(name="persons")
  */
-class Person
+class Person /*implements UserInterface*/
 {
     /**
      * @ORM\Id

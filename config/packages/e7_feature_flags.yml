@@ -1,0 +1,58 @@
+#parameters:
+e7_feature_flags:
+    features:
+        feature_true: true
+        feature_true_with_parent: 
+            enabled: true
+            parent: feature_true
+        feature_false: false
+        feature_false_with_parent:
+            enabled: false
+            parent: feature_false
+        feature_empty:
+        feature_empty_with_parent:
+            enabled:
+            parent: feature_empty
+        feature_enabled: enabled
+        feature_enabled_with_parent:
+            enabled: enabled
+            parent: feature_enabled
+        feature_disabled: disabled
+        feature_disabled_with_parent:
+            enabled: disabled
+            parent: feature_disabled
+        feature_default: default
+        feature_default_with_parent:
+            enabled: default
+            parent: feature_default
+        feature_string: "condition1"
+#        feature_string_with_parent:
+#            enabled: "condition1"
+#            parent: feature_string
+        feature_array: [ "condition3", "condition4" ]
+#        feature_array_with_parent:
+#            enabled: [ "condition3", "condition4" ]
+#            parent: feature_array
+        feature_instant_condition: host:*.example.com
+        
+    conditions:
+        condition1:
+            type: host
+            hosts: '*.example.com'
+        condition2:
+            type: host
+            hosts: [ 'foo.example.com', 'www.example.com' ]
+        condition3:
+            type: ip
+            ips: '127.0.0.1'
+        condition3b:
+            type: ip
+            ips: ['127.0.0.1']
+        condition3c:
+            type: ip
+            ips: [ '127.0.0.1', '192.168.1.*' ]
+        condition4:
+            type: Chain
+        condition5_bool:
+            type: bool
+            flag: true

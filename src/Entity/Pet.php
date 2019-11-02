@@ -8,8 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity()
  * @ORM\Table(name="pets")
  */
-class Pet
+class Pet /*implements \E7\MetaBundle\Shared\MetaAwareInterface*/
 {
+//    use \E7\MetaBundle\Entity\Traits\MetaAwareTrait;
+//    use \E7\MetaBundle\Shared\MetaDelegateTrait;
+    
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -21,11 +24,6 @@ class Pet
      * @ORM\Column(type="string", length=255)
      */
     private $name;
-
-    /**
-     * @ORM\Column(type="entitystring")
-     */
-    private $owner;
 
     /**
      * @return mixed
@@ -52,24 +50,4 @@ class Pet
         $this->name = $name;
         return $this;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getOwner()
-    {
-        return $this->owner;
-    }
-
-    /**
-     * @param mixed $owner
-     * @return Pet
-     */
-    public function setOwner($owner)
-    {
-        $this->owner = $owner;
-        return $this;
-    }
-
-
 }

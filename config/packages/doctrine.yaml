@@ -7,10 +7,10 @@ doctrine:
         default_table_options:
             charset: utf8mb4
             collate: utf8mb4_unicode_ci
-        types:
-            entitystring: E7\MetaBundle\DBAL\Types\EntityString
-        mapping_types:
-            entitystring: string
+#        types:
+#            entitystring: E7\MetaBundle\DBAL\Types\EntityString
+#        mapping_types:
+#            entitystring: string
 
         url: '%env(resolve:DATABASE_URL)%'
     orm:

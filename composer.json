@@ -6,7 +6,7 @@
     "license": "proprietary",
     "require": {
         "php": "^7.0.8",
-        "ebene7/symfony-meta-bundle": "dev-dev",
+        "ebene7/symfony-feature-flags-bundle": "dev-feature-first-draft",
         "ebene7/php-lib": "dev-dev",
         "ebene7/phpunit": "dev-dev",
         "ext-ctype": "*",

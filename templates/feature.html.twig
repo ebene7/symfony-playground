@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+test feature 
+
+<div>
+    {% if (feature_enabled('foo')) %}
+        Feature foo ist aktiv
+    {% else %}
+        Feature foo ist nicht aktiv
+    {% endif %}
+</div>
+
+<div>
+    {% if (feature_enabled('feature1')) %}
+        Feature feature1 ist aktiv
+    {% else %}
+        Feature feature1 ist nicht aktiv
+    {% endif %}
+</div>
+    
+    
+<div>
+    {% if (feature_enabled('feature1')) %}
+        Feature feature1 ist aktiv
+    {% else %}
+        Feature feature1 ist nicht aktiv
+    {% endif %}
+</div>
+    
+<div>
+    {% if (feature_enabled('feature2')) %}
+        Feature feature2 ist aktiv
+    {% else %}
+        Feature feature2 ist nicht aktiv
+    {% endif %}
+</div>
+
+<div>
+    {% if (feature_enabled('feature3')) %}
+        Feature feature3 ist aktiv
+    {% else %}
+        Feature feature3ist nicht aktiv
+    {% endif %}
+</div>
+
+<div>
+    {% if (feature_enabled('feature3b')) %}
+        Feature feature3b ist aktiv
+    {% else %}
+        Feature feature3b ist nicht aktiv
+    {% endif %}
+</div>
+    
+<div>
+    {% if (feature_enabled('feature4')) %}
+        Feature feature4 ist aktiv
+    {% else %}
+        Feature feature4 ist nicht aktiv
+    {% endif %}
+</div>
+{% endblock %}

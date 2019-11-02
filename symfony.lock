@@ -96,6 +96,9 @@
     "ebene7/phpunit": {
         "version": "dev-dev"
     },
+    "ebene7/symfony-feature-flags-bundle": {
+        "version": "dev-feature-first-draft"
+    },
     "ebene7/symfony-meta-bundle": {
         "version": "dev-dev"
     },
